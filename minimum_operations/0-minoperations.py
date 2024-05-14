@@ -6,7 +6,7 @@ Minimum Operations
 
 def minOperations(n):
     """
-    Calculates the number of operations needed to result n H character 
+    Calculates the number of operations needed to result n H character
     """
     if n <= 1:
         return 0
@@ -29,4 +29,4 @@ if __name__ == "__main__":
     print(message.format(n, minOperations(n)))
 
     n = 12
-    print(message.format(n, minOperations(n)))
+    print(message.format(n, minOperations(n)))   
