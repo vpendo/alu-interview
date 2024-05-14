@@ -29,5 +29,4 @@ if __name__ == "__main__":
     print(message.format(n, minOperations(n)))
 
     n = 12
-    print(message.format(n, minOperations(n)))   
-    
+    print(message.format(n, minOperations(n)))
