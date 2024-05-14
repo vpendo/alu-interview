@@ -3,7 +3,6 @@
 Minimum Operations
 """
 
-
 def minOperations(n):
     """
     Calculates the fewest number of operations needed to result in exactly n H characters in the file.
@@ -11,15 +10,16 @@ def minOperations(n):
     if n <= 1:
         return 0
 
-    operations = [0] * (n + 1)
-    for i in range(2, n + 1):
-        if n % i == 0:
-            operations[i] = i
-            for j in range(i * 2, n + 1, i):
-                operations[j] = min(operations[j], operations[i] + j // i)
+    operations = 0
+    divisor = 2
+    while n > 1:
+        if n % divisor == 0:
+            n //= divisor
+            operations += divisor
+        else:
+            divisor += 1
 
-    return operations[n]
-
+    return operations
 
 if __name__ == "__main__":
     n = 4
@@ -27,4 +27,3 @@ if __name__ == "__main__":
 
     n = 12
     print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
-
