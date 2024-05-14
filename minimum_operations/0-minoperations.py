@@ -6,7 +6,7 @@ Minimum Operations
 
 def minOperations(n):
     """
-    Calculates the fewest number of operations needed to result n H chacter in the file.
+    Calculates the fewest number of operations needed to result n H character in the file.
     """
     if n <= 1:
         return 0
@@ -29,3 +29,4 @@ if __name__ == "__main__":
 
     n = 12
     print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
+
