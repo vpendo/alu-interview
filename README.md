@@ -7,6 +7,6 @@ This Python script calculates the minimum number of operations needed to result 
 2. open folder: minimum_operations
 3. open file : 0-minoperations.py
 ## AUTHORS
-1. Vestine Pendo
-2. Mugisha Divine Karemera
+1. Vestine Pendo:
+   v.pendo@alustudent.com
    
